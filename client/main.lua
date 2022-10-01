@@ -1,14 +1,5 @@
 QBCore = nil
-
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(10)
-        if QBCore == nil then
-            TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-            Citizen.Wait(200)
-        end
-    end
-end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 isLoggedIn = false
 local PlayerJob = {}
@@ -51,7 +42,7 @@ end
 Citizen.CreateThread(function()
     while true do 
         Citizen.Wait(1)
-        if isLoggedIn and QBCore ~= nil then
+        -- if isLoggedIn and QBCore ~= nil then
             local pos = GetEntityCoords(GetPlayerPed(-1))
             if PlayerJob.name == "gundealer" then
                 if (GetDistanceBetweenCoords(pos.x, pos.y, pos.z, Config.Locations["vehiclegundealer"].coords.x, Config.Locations["vehiclegundealer"].coords.y, Config.Locations["vehiclegundealer"].coords.z, true) < 10.0) then
@@ -76,16 +67,16 @@ Citizen.CreateThread(function()
             else
                 Citizen.Wait(2500)
             end
-        else
-            Citizen.Wait(2500)
-        end
+        -- else
+        --     Citizen.Wait(2500)
+        -- end
     end
 end)
 
 Citizen.CreateThread(function()
     while true do 
         Citizen.Wait(1)
-        if isLoggedIn and QBCore ~= nil then
+        -- if isLoggedIn and QBCore ~= nil then
             local pos = GetEntityCoords(GetPlayerPed(-1))
             if PlayerJob.name == "gundealer" then
                 if (GetDistanceBetweenCoords(pos.x, pos.y, pos.z, Config.Locations["stashgundealer"].coords.x, Config.Locations["stashgundealer"].coords.y, Config.Locations["stashgundealer"].coords.z, true) < 10.0) then
@@ -104,16 +95,16 @@ Citizen.CreateThread(function()
             else
                 Citizen.Wait(2500)
             end
-        else
-            Citizen.Wait(2500)
-        end
+        -- else
+        --     Citizen.Wait(2500)
+        -- end
     end
 end)
 
 Citizen.CreateThread(function()
     while true do 
         Citizen.Wait(1)
-        if isLoggedIn and QBCore ~= nil then
+        -- if isLoggedIn and QBCore ~= nil then
             local pos = GetEntityCoords(GetPlayerPed(-1))
             if PlayerJob.name == "gundealer" then
                 if (GetDistanceBetweenCoords(pos.x, pos.y, pos.z, Config.Locations["gundealerweapons"].coords.x, Config.Locations["gundealerweapons"].coords.y, Config.Locations["gundealerweapons"].coords.z, true) < 10.0) then
@@ -128,9 +119,9 @@ Citizen.CreateThread(function()
             else
                 Citizen.Wait(2500)
             end
-        else
-            Citizen.Wait(2500)
-        end
+        -- else
+        --     Citizen.Wait(2500)
+        -- end
     end
 end)
 

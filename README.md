@@ -15,11 +15,21 @@ For those who use qb server with JOB GRADES
 
 ["gundealer"] = {
     label = "Gundealer",
-    defaultDuty = true,
-    grades = {
-        [1] = {
-            label = "Starter",
-            payment = 500,
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+        ['0'] = { label = "Starter",
+        payment = 50,
+        },
+        
+        ['1'] = {
+            name = "Employee",
+            payment = 75
+        },
+        ['2'] = {
+            name = 'Boss',
+            isboss = true,
+            payment = 500
         },
     }
-}, 
+},

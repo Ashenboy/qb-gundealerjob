@@ -3,20 +3,21 @@ Config = {}
 Config.Locations = {
     ["vehiclegundealer"] = {
         label = "Car Spawn",
-        coords = {x = 106.15, y = -1942.45, z = 20.8},
+        coords = {x = -1522.0206, y = 99.0061, z = 56.7121},
     },
     ["gundealerweapons"] = {
         label = "Gun Dealer Armory",
-        coords = {x = 117.6, y = -1950.23, z = 20.75},
+        coords = {x = -1520.4961, y = 109.6679, z = 50.0273},
     },
     ["stashgundealer"] = {
         label = "Gun Dealer Stash",
-        coords = {x = 114.3, y = -1961.27, z = 21.33},
+        coords = {x = -1531.7507, y = 142.8325, z = 55.6681},
     },
 }
 
 Config.Vehicles = {
-    ["elegy"] = "Elegy",
+    ["contender"] = "contender",
+    ["dubsta"] = "dubsta",
 
 }
 
@@ -26,7 +27,7 @@ Config.GunDealer = {
     items = {
         [1] = {
             name = "weapon_knife",
-            price = 250,
+            price = 4000,
             amount = 50,
             info = {},
             type = "item",
@@ -34,7 +35,7 @@ Config.GunDealer = {
         },
         [2] = {
             name = "weapon_switchblade",
-            price = 500,
+            price = 4500,
             amount = 50,
             info = {},
             type = "item",
@@ -42,7 +43,7 @@ Config.GunDealer = {
         },
         [3] = {
             name = "weapon_pistol",
-            price = 2500,
+            price = 30000,
             amount = 50,
             info = {},
             type = "item",
@@ -50,7 +51,7 @@ Config.GunDealer = {
         },
         [4] = {
             name = "weapon_pistol50",
-            price = 6000,
+            price = 35000,
             amount = 50,
             info = {},
             type = "item",
@@ -58,31 +59,31 @@ Config.GunDealer = {
         },
         [5] = {
             name = "weapon_combatpistol",
-            price = 4000,
+            price = 35000,
             amount = 50,
             info = {},
             type = "item",
             slot = 5,
         },
         [6] = {
-            name = "weapon_microsmg",
-            price = 12000,
+            name = "weapon_vintagepistol",
+            price = 40000,
             amount = 50,
             info = {},
             type = "item",
             slot = 6,
         },
         [7] = {
-            name = "weapon_machinepistol",
-            price = 9500,
+            name = "weapon_navyrevolver",
+            price = 60000,
             amount = 50,
             info = {},
             type = "item",
             slot = 7,
         },
         [8] = {
-            name = "weapon_carbinerifle",
-            price = 35000,
+            name = "weapon_revolver",
+            price = 70000,
             amount = 50,
             info = {},
             type = "item",
@@ -90,23 +91,23 @@ Config.GunDealer = {
         },
         [9] = {
             name = "weapon_assaultrifle",
-            price = 20000,
+            price = 500000,
             amount = 50,
             info = {},
             type = "item",
             slot = 9,
         },
         [10] = {
-            name = "weapon_stungun",
-            price = 1000,
+            name = "weapon_advancedrifle",
+            price = 1000000,
             amount = 50,
             info = {},
             type = "item",
             slot = 10,
         },
         [11] = {
-            name = "weapon_compactrifle",
-            price = 16000,
+            name = "weapon_assaultrifle_mk2",
+            price = 1500000,
             amount = 50,
             info = {},
             type = "item",
@@ -114,7 +115,7 @@ Config.GunDealer = {
         },
         [12] = {
             name = "weapon_heavypistol",
-            price = 6000,
+            price = 50000,
             amount = 50,
             info = {},
             type = "item",
@@ -122,7 +123,7 @@ Config.GunDealer = {
         },
         [13] = {
             name = "weapon_smg",
-            price = 14000,
+            price = 300000,
             amount = 50,
             info = {},
             type = "item",
@@ -139,7 +140,7 @@ Config.GunDealer = {
         [15] = {
             name = "rifle_ammo",
             price = 50,
-            amount = 1000,
+            amount = 2500,
             info = {},
             type = "item",
             slot = 15,
@@ -147,7 +148,7 @@ Config.GunDealer = {
         [16] = {
             name = "smg_ammo",
             price = 50,
-            amount = 1000,
+            amount = 1750,
             info = {},
             type = "item",
             slot = 16,
@@ -170,7 +171,7 @@ Config.GunDealer = {
         },
         [19] = {
             name = "smg_extendedclip",
-            price = 3000,
+            price = 5000,
             amount = 1000,
             info = {},
             type = "item",
@@ -186,7 +187,7 @@ Config.GunDealer = {
         },
         [21] = {
             name = "smg_scope",
-            price = 3000,
+            price = 3500,
             amount = 1000,
             info = {},
             type = "item",
@@ -194,7 +195,7 @@ Config.GunDealer = {
         },
         [22] = {
             name = "smg_suppressor",
-            price = 3000,
+            price = 4500,
             amount = 1000,
             info = {},
             type = "item",
@@ -218,7 +219,7 @@ Config.GunDealer = {
         },
         [25] = {
             name = "rifle_suppressor",
-            price = 3000,
+            price = 5000,
             amount = 1000,
             info = {},
             type = "item",
